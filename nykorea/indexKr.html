@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--리믹스아이콘-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!--인스타 페이스북 트위터-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--글꼴-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+   <!--에니메이션-->
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+   <!--스와이퍼-->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--main.css-->
+    <link rel="stylesheet" href="./main.css">
+    <title>뉴욕한국문화원</title>
+
+</head>
+
+<!--메인css-->
+
+<body>
+
+    <!--에니메이션 스크립트-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--에니메이션 스크립트-->
+    <!--스와이퍼 스크립트-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--버거-->
+    <button class="bgr">
+      <div  id="bg1"></div>
+      <div  id="bg2"></div>
+      <div  id="bg3"></div>
+    </button>
+
+<header class="header">
+  <div class="header-set">
+    <h1 class="gos-logo"><a href="#" class="header-logo"><span class="blind">뉴욕한국문화원</span></a></h1>
+<!--b-w-->
+    <div class="header-list-line">
+      <!--
+      <nav id="gnb">
+        <ul class="dep1">
+            <li>
+                <a class="hlist" href="#">한국 소개</a>
+            </li>
+            <li>
+                <a  class="hlist" href="#">프로그램 & 이벤트</a>
+            </li>
+            <li>
+                <a  class="hlist" href="#">도서관</a>
+            </li>
+            <li>
+                <a   class="hlist" href="#">방문</a>
+            </li>
+        </ul>
+      </nav>
+-->
+  <nav>
+    <div class="menu"  id="gnb">
+      <div class="dep1">
+      <div class="menu-item ">
+        <span class="mainlist">한국 소개</span>
+        <div class="dropdown">
+          <a href="https://kr.koreanculture.org/korea-information-life"  target="_blank" rel="noopener noreferrer">생활</a>
+          <a href="https://kr.koreanculture.org/korea-information-society"  target="_blank" rel="noopener noreferrer">사회</a>
+          <a href="https://kr.koreanculture.org/korea-information-culture"  target="_blank" rel="noopener noreferrer">문화</a>
+          <a href="https://kr.koreanculture.org/korea-information-tourism"  target="_blank" rel="noopener noreferrer">관광</a>
+          <a href="https://kr.koreanculture.org/korea-information-sports" target="_blank" rel="noopener noreferrer">스포츠</a>
+          <a href="https://kr.koreanculture.org/korea-information-history" target="_blank" rel="noopener noreferrer">역사</a>
+          <a href="https://kr.koreanculture.org/korea-information-government" target="_blank" rel="noopener noreferrer">정부</a>
+          <a href="https://kr.koreanculture.org/korea-information-economy">경제</a>
+          <a href="https://kr.koreanculture.org/korea-information-interkorean-relations" target="_blank" rel="noopener noreferrer">남북관계</a>
+          <a href="https://kr.koreanculture.org/learning-resources" target="_blank" rel="noopener noreferrer">학습자료</a>
+          <a href="https://www.flickr.com/people/koreanet/" target="_blank" rel="noopener noreferrer">관련 이미지</a>
+          <a href="https://kr.koreanculture.org/related-sites" target="_blank" rel="noopener noreferrer">관련 사이트</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <span class="mainlist">프로그램 & 이벤트</span>
+        <div class="dropdown">
+          <a href="https://www.koreanculture.org/performingarts" target="_blank" rel="noopener noreferrer">공연예술</a>
+          <a href="https://www.koreanculture.org/exhibition-visual-arts" target="_blank" rel="noopener noreferrer">전시 & 시각예술</a>
+          <a href="https://www.koreanculture.org/film" target="_blank" rel="noopener noreferrer">영화</a>
+          <a href="https://www.koreanculture.org/education" target="_blank" rel="noopener noreferrer">교육 / 문학</a>
+          <a href="https://www.koreanculture.org/cuisine" target="_blank" rel="noopener noreferrer">한식</a>
+          <a href="https://www.koreanculture.org/online-contents" target="_blank" rel="noopener noreferrer">특별 이벤트</a>
+          <a href="https://www.koreanculture.org/multimedia" target="_blank" rel="noopener noreferrer">이벤트 갤러리</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <span class="mainlist">도서관</span>
+        <div class="dropdown">
+          <a href="http://library.koreanculture.org/subhomepage1_e/usmn000.jsp" target="_blank" rel="noopener noreferrer">KOREAN</a>
+          <a href="http://library.koreanculture.org/subhomepage1/usmn000.jsp" target="_blank" rel="noopener noreferrer">ENGLISH</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <span class="mainlist">방문</span>
+        <div class="dropdown">
+          <a href="https://www.koreanculture.org/welcome-to-kccny" target="_blank" rel="noopener noreferrer">문화원소개</a>
+          <a href="https://www.koreanculture.org/visitors-guideline" target="_blank" rel="noopener noreferrer">방문안내</a>
+          <a href="https://www.koreanculture.org/contact-us" target="_blank" rel="noopener noreferrer">문의</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+
+      <nav id="gnb-lang-sns">
+        
+        <a class="go-sns" href="./indexEn.html" ><i class="ri-english-input"></i></a>
+        <a class="go-sns" href="https://www.instagram.com/kccny/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="go-sns" href="https://www.facebook.com/KoreanCulturalCenterNY/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="go-sns" href="https://x.com/KoreanCultureNY" target="_blank"><i class="fab fa-twitter"></i></a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main>
+  <section id="section0">
+    <img class="sect-mimg" src="./img/mainK.png" alt="mainimg">
+    <div class="mainh-line" data-aos="flip-down" data-aos-anchor-placement="top-bottom"  data-aos-duration="2000">
+    <h1  >NewYork Korea Center</h1>
+    <h2  >배움과 한글이 뉴욕에</h2>
+    </div>
+  </section>
+
+  <section id="section1">
+    <div class="h-line" data-aos="flip-left" data-aos-duration="2000">
+      <h2>FEATURED EVENTS</h2>
+    </div>
+    
+    <div class="mainslider-container">
+      <div class="mainslider-track" id="mainsliderTrack">
+        <div class="mainslide">
+          <a href="https://kr.koreanculture.org/exhibition/2025/05/chang-ucchin" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1744730024375-55SZ3PXM1GGVJ12E2LUW/%EC%9E%A5%EC%9A%B1%EC%A7%84+%EC%A0%84%EC%8B%9C+%ED%8F%AC%EC%8A%A4%ED%84%B0+%28%EA%B0%80%EB%A1%9C%29.png?format=1500w" alt="Genmoji" />
+          <div class="mainslide-text non-show">
+            <p>culture</p>
+            <h3>날개 달린 가능성.</h3>
+          </div>
+          </a>
+        </div>
+        <div class="mainslide">
+          <a href="https://www.koreanculture.org/performing-arts/2025/06/30sounds-rhythms-of-korea" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1748625923652-PR2EHWI4ZEGH6VZ47CP1/Poster_Sounds+and+Rhythms+of+Korea.png?format=1500w" alt="카메라" />
+          <div class="mainslide-text-b non-show">
+            <p>한국국악</p>
+            <h3>신비로운 음악과 한국의 음악을 마음껏.</h3>
+          </div>
+        </a>
+        </div>
+        <div class="mainslide">
+          <a href="https://kr.koreanculture.org/performing-arts/2025/08/06/kmusic-night/kor" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1747756050738-A6897EN3M98TV83J0EJ3/Poster+2025+KMusic+Night+MAIN+FINAL.png?format=1500w" alt="A18" />
+          <div class="mainslide-text-b non-show">
+            <p>k-pop</p>
+            <h3>보고싶은 k-pop 아이돌</h3>
+          </div>
+        </a>
+        </div>
+        <div class="mainslide">
+          <a href="https://www.koreanculture.org/performing-arts/2025/06/20/nina" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1746804985728-5G0GE6343VC7T6LA112B/Poster+Nina+1920x1080+FINAL+%282%29.jpg?format=1500w" alt="설계" />
+          <div class="mainslide-text-b non-show">
+            <p>in New York</p>
+            <h3>아름답게, 견고하게, 설계부터 다르게.</h3>
+          </div>
+        </a>
+        </div>
+        <div class="mainslide">
+          <a href="https://kr.koreanculture.org/exhibition/2024/07/hangeul-wall-1000kr" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1734710091368-GNQTFBDQH6HF3H7V2P5T/%25255BFor%252BPress%25255D%252BHangeul%252BWall%252BPhoto%252B%2525285%252529%252B%2525282%252529.jpg?format=1500w" alt="환경" />
+          <div class="mainslide-text non-show">
+            <p>한글</p>
+            <h3>가나다라바사</h3>
+          </div>
+          </a>
+        </div>
+        <div class="mainslide">
+          <a href="https://www.koreanculture.org/films/2025/06/12/nkmn-exorcism-chronicles" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1748743740124-UF4H95QQI1SHCMN8E7G8/NEW+KOREAN+MOVIE+NIGHT.png?format=1500w" alt="보안" />
+          <div class="mainslide-text non-show">
+            <p>애니메이션</p>
+            <h3>당신의 데이터를 원하는 곳에서만.</h3>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="nav-buttons">
+      <button class="nav-btn" id="prevBtn">&#10094;</button>
+      <button class="nav-btn" id="nextBtn">&#10095;</button>
+    </div>
+  </section>
+  <!--
+     Swiper 컨테이너 
+  <section class="swiper-container s-bg-g4" id="section1">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1744730024375-55SZ3PXM1GGVJ12E2LUW/%EC%9E%A5%EC%9A%B1%EC%A7%84+%EC%A0%84%EC%8B%9C+%ED%8F%AC%EC%8A%A4%ED%84%B0+%28%EA%B0%80%EB%A1%9C%29.png?format=1500w" alt="Main Image 1">
+          </div>
+          <div class="swiper-slide">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1748625923652-PR2EHWI4ZEGH6VZ47CP1/Poster_Sounds+and+Rhythms+of+Korea.png?format=1500w" alt="Main Image 2">
+          </div>
+          <div class="swiper-slide">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1747756050738-A6897EN3M98TV83J0EJ3/Poster+2025+KMusic+Night+MAIN+FINAL.png?format=1500w" alt="Main Image 3">
+          </div>
+          <div class="swiper-slide">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1746804985728-5G0GE6343VC7T6LA112B/Poster+Nina+1920x1080+FINAL+%282%29.jpg?format=1500w" alt="Main Image 4">
+          </div>
+          <div class="swiper-slide">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1734710091368-GNQTFBDQH6HF3H7V2P5T/%25255BFor%252BPress%25255D%252BHangeul%252BWall%252BPhoto%252B%2525285%252529%252B%2525282%252529.jpg?format=1500w" alt="Main Image 5">
+          </div>
+      </div>
+       네비게이션 버튼 
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+       페이지네이션 
+      <div class="swiper-pagination"></div>
+         점 형태의 스크롤바 
+        <div class="swiper-scrollbar"></div>
+        
+  </section>
+  -->
+
+
+
+
+      <section id="section2" >
+        <div class="sec3areaA">
+          <h2 class="ml2" div data-aos="flip-left" data-aos-duration="1500">FOLLOW US ON</h2>
+          <h2 class="ml6" div data-aos="flip-left" data-aos-duration="1500">SOCIAL MEDIA</h2>
+          <button class="btnflw">follow</button>
+        </div>
+        <div class="sec3areaB">
+        <h2 data-aos="flip-up" data-aos-delay="300" >뉴욕에 오신걸 환영합니다.</h2>
+      </div>
+        <img  class="nyGoat" src="./img/nyGoat.png" alt="자유의 여신상" data-aos="flip-right" data-aos-delay="300" data-aos-easing="ease-out-back">
+      </section>
+      <section id="section3">
+        <div class="subcontainer">
+          <div class="item s1"><img src="./img/subimg/su1.png" alt="s1">
+            <div class="subtextarea"><h3>WELCOME</h3><p>in NewYork</p></div>
+          </div>
+          <div class="item s2"><img src="./img/subimg/su2.png" alt="s2">
+            <div class="subtextarea"><h3>TICKETS</h3><p>10 tony award</p></div>
+          </div>
+          <div class="item s3"><img src="./img/subimg/su3.png" alt="s3">
+            <div class="subtextarea"><h3>TIMESQUARE</h3><p>in NewYork</p></div>
+          </div>
+          <div class="item s4"><img src="./img/subimg/su4.png" alt="s4">
+            <div class="subtextarea"><h3>K-pop</h3><p>Come to K-pop</p></div>
+          </div>
+          <div class="item s5"><img src="./img/subimg/su5.png" alt="s5">
+            <div class="subtextarea"><h3> K-music </h3><p>a contest Traditional</p></div>
+          </div>
+          <div class="item s6"><img src="./img/subimg/su6.png" alt="s6">
+            <div class="subtextarea"><h3>EMPLOYMENT</h3><p>Welcome</p></div>
+          </div>
+      </div>
+      </section>
+      <!--
+      <section id="section4" >
+
+      </section>
+      -->
+      <section id="section5">
+        <div class="news-head">
+        <h2 class="ml2" div data-aos="flip-left" data-aos-duration="1500">News</h2>
+        <h2 class="ml2" div data-aos="flip-left" data-aos-duration="2000">Korea.net</h2>
+      </div>
+        <ul class="news-list">
+          <li>
+            <a href="https://www.korea.net/NewsFocus/Business/view?articleId=272942" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 06, 2025</div>
+              <div class="news-title">Swede joins culture minister on fam tour of eastern province</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.korea.net/NewsFocus/FoodTravel/view?articleId=272932" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">Egyptian influencer promotes Korean culture in Arab world</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.korea.net/NewsFocus/Culture/view?articleId=272922" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">UN agency lauds Korean humanitarian aid in YouTube video</div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.korea.net/NewsFocus/policies/view?articleId=272912" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">Honoring nation's fallen heroes on eve of Memorial Day</div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.korea.net/NewsFocus/Sci-Tech/view?articleId=272896" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">June 5 designated annual day to honor traditional music</div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.korea.net/NewsFocus/Korea_in_photos/view?articleId=272885" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">Deals for nuke plant in Czechia, fighters to Philippines concluded</div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="section6" >
+
+
+        <a href="https://www.koreanculture.org/subscribe" target="_blank" rel="noopener noreferrer">
+        <div class="subbbox s-bg-g4">
+          <img class="sub-bimg" src="./img/subbnner.png" alt="subimg" data-aos="flip-down" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+        </div>
+        </a>
+        <!--돌아가는 이미지-->
+        <div class="infinite-loslider">
+          <div class="infinite-track">
+            <!-- 원본 이미지 세트 -->
+            <div class="loslide"><img src="./img/moneimg/ming1.png" alt=""><span>#문화</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming2.png" alt=""><span>#예술</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming3.png" alt=""><span>#공연</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming4.png" alt=""><span>#전시</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming5.png" alt=""><span>#교육</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming6.png" alt=""><span>#행사</span></div>
+        
+            <!-- 복제 이미지 세트 -->
+            <div class="loslide"><img src="./img/moneimg/ming1.png" alt=""><span>#문화</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming2.png" alt=""><span>#예술</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming3.png" alt=""><span>#공연</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming4.png" alt=""><span>#전시</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming5.png" alt=""><span>#교육</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming6.png" alt=""><span>#행사</span></div>
+          </div>
+      </div>
+
+
+        <footer class="footer">
+          <div class="footer-inner">
+        
+            <!-- 왼쪽 정보 영역 -->
+            <div class="footer-info">
+              <ul class="footer-nav">
+                <li><a href="#">Press Releases</a></li>
+                <li><a href="#">In The Media</a></li>
+                <li><a href="#">Jobs & Opportunities</a></li>
+              </ul>
+        
+              <h3>Korean Cultural Center New York</h3>
+              <address>
+                122 E 32nd St.,<br>
+                New York, NY 10016<br>
+                @TELL (212) 759 9550<br>
+                @E-mail <a href="mailto:info@koreanculture.org">info@koreanculture.org</a>
+              </address>
+            </div>
+        
+            <!-- 오른쪽 로고 영역 -->
+            <div class="footer-logos">
+              <a href="https://www.mcst.go.kr/english/index.jsp" title="Partner 1"><img src="./img/flogo/f-img1.png" alt="Partner 1 Logo"></a>
+              <a href="https://www.kocis.go.kr/main.do" title="Partner 2"><img src="./img/flogo/f-img2.png" alt="Partner 2 Logo"></a>
+              <a href="https://overseas.mofa.go.kr/us-newyork-en/index.do" title="Partner 3"><img src="./img/flogo/f-img3.png" alt="Partner 3 Logo"></a>
+              <a href="https://english.visitkorea.or.kr/svc/main/index.do" title="Partner 4"><img src="./img/flogo/f-img4.png" alt="Partner 4 Logo"></a>
+              <a href="http://atcenteramerica.com/" title="Partner 5"><img src="./img/flogo/f-img5.png" alt="Partner 5 Logo"></a>
+              <a href="https://atcenteramerica.com/" title="Partner 6"><img src="./img/flogo/f-img6.png" alt="Partner 6 Logo"></a>
+            </div>
+        
+          </div>
+        </footer>
+      </section>
+</main>
+
+
+</body>
+</html>
+
+
+
+  
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+
+
+
+    var mySwiper = new Swiper('.swiper-container', {
+      effect: 'fade', // 슬라이드 대신 fade 효과
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+        hide: false,
+      },
+    });
+</script>
+
+
+<script>
+//로딩시 서서히
+window.addEventListener('load', function () {
+        document.body.classList.add('loaded');
+    });
+//스크롤맨위로
+document.addEventListener('DOMContentLoaded', function () {
+    const logo = document.querySelector('.gos-logo');
+    if (logo) {
+      logo.addEventListener('click', function (e) {
+        e.preventDefault(); // 링크 이동 방지 (필요 시)
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // 부드럽게 스크롤
+        });
+      });
+    }
+  });
+//화면 스크롤
+const sections = document.querySelectorAll('section');
+let currentSection = 0;
+let isScrolling = false;
+
+window.addEventListener(
+  'wheel',
+  (e) => {
+        // 화면 너비가 768px 이하이면 기본 스크롤 허용
+        if (window.innerWidth <= 768) return;
+
+    // Ctrl, Command, Alt, Shift 키 누르면 무시
+    if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) return;
+
+    // 이미 스크롤 중이면 무시
+    if (isScrolling) return;
+
+    e.preventDefault();
+    isScrolling = true;
+
+    const direction = e.deltaY > 0 ? 1 : -1;
+
+    // 섹션 인덱스 계산
+    const nextSection = currentSection + direction;
+
+    // 범위 제한
+    if (nextSection >= 0 && nextSection < sections.length) {
+      currentSection = nextSection;
+
+      sections[currentSection].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    // 스크롤이 끝나기 전에 다시 반응하지 않도록 타이머 설정
+    setTimeout(() => {
+      isScrolling = false;
+    }, 1000); // 섹션 이동 시간에 맞춰 설정
+  },
+  { passive: false }
+);
+
+
+//메인 화면
+const track = document.getElementById('mainsliderTrack');
+const mainslides = document.querySelectorAll('.mainslide');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentIndex = 0;
+
+// 슬라이드 하나의 실제 width를 계산 (마진 포함)
+function getSlideWidth() {
+  return mainslides[0].offsetWidth + parseInt(getComputedStyle(mainslides[0]).marginRight || 0);
+}
+
+function updateSlide() {
+  const slideWidth = getSlideWidth();
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+  // 버튼 활성/비활성 처리
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex === mainslides.length - 1;
+
+  // 비활성화된 버튼에 클래스 추가 (스타일 적용용)
+  prevBtn.classList.toggle('disabled', currentIndex === 0);
+  nextBtn.classList.toggle('disabled', currentIndex === mainslides.length - 1);
+}
+
+// 버튼 클릭 시 슬라이드 이동
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlide();
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < mainslides.length - 1) {
+    currentIndex++;
+    updateSlide();
+  }
+});
+
+// 화면 리사이즈 시 위치 재계산
+window.addEventListener('resize', () => {
+  updateSlide();
+});
+
+// 초기 실행
+updateSlide();
+
+
+
+//follow
+document.querySelector('.btnflw').addEventListener('click', () => {
+    document.getElementById('section3').scrollIntoView({ behavior: 'smooth' });
+  });
+
+//버거
+
+
+
+const bbtbgr = document.querySelector('.bgr');
+const headerline = document.querySelector('.header');
+
+const bg1 = document.getElementById('bg1');
+const bg2 = document.getElementById('bg2');
+const bg3 = document.getElementById('bg3');
+
+
+function handleResize() {
+  if (window.innerWidth < 768) {
+    headerline.classList.add('non-show');
+  } else {
+    headerline.classList.remove('non-show');
+  }
+}
+
+// 초기 실행
+handleResize();
+
+// 리사이즈 이벤트 리스너 추가
+window.addEventListener('resize', handleResize);
+
+    bbtbgr.addEventListener('click', function() {
+        bg1.classList.toggle('bgrd1');
+        bg2.classList.toggle('bgrd2');
+        bg3.classList.toggle('bgrd3');
+        headerline.classList.toggle('non-show');
+    });
+
+ 
+
+</script>
+</body>
+</html>

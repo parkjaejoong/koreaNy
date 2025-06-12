@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--리믹스아이콘-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!--인스타 페이스북 트위터-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--글꼴-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+   <!--에니메이션-->
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+   <!--스와이퍼-->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Korean Cultural Center in New York</title>
+
+</head>
+
+<!--메인css-->
+<style>
+/*기본세팅*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+
+        /* 로딩 완료 후 (보임) */
+        body.loaded {
+            opacity: 1;
+        }
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
+body {
+    background-color: var(--main-white-color);
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+    }
+
+section{
+    height: 100vh;
+    }
+
+a{
+    color : inherit;
+    text-decoration: none;
+    }
+
+    .btnflw {
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background: var( --btn-gray);
+    color: var(--font-color);
+    cursor: pointer;
+}
+.ml1{
+  margin-left: 1rem;
+}
+.ml2{
+  margin-left: 2rem;
+}
+.ml3{
+  margin-left: 3rem;
+}
+.ml4{
+  margin-left: 4rem;
+}
+.ml5{
+  margin-left: 5rem;
+}
+.ml6{
+  margin-left: 6rem;
+}
+
+.non-show{
+  display: none;
+}
+/*공통css*/
+
+
+/*스크롤바*/
+::-webkit-scrollbar {
+  width: 0px; 
+  height: hidden;
+}
+/* 배경 */
+::-webkit-scrollbar-track {
+  background: none;
+/*  border-radius: 10px; */
+}
+
+/* 핸들  */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+/*  border-radius: 10px; */
+}
+
+/* 핸들 hover  */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-sub1-color);
+}
+/*h테그*/
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  
+  h4 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  h5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 22px; }
+    h4 { font-size: 18px; }
+    h5 { font-size: 16px; }
+  }
+  
+
+
+::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0 !important;
+}
+
+
+/*색상*/
+:root {
+
+/*배경컬러*/
+--main-color : rgb(28, 118, 253);
+--main2-color :rgb(253, 28, 28);
+--main-sub1-color:rgb(38, 204, 255);
+--main-sub2-color:rgb(38, 71, 255);
+--main-white-color:rgb(245, 245, 245);
+--main-box-white-color:rgb(255, 255, 255);
+--main-black-color:rgb(44, 44, 44);
+--main-gray-color:rgb(235 235 235);
+/*버튼컬러*/
+ --btn-gray:  #c1c1c1;
+/*보더*/
+--border-main : rgb(88, 187, 187);
+--border-white-color : rgb(224, 224, 224);
+--border-gray-color : rgb(100, 100, 100);
+
+/*폰트*/
+--font-color : rgb(61, 61, 61);
+--font-white-color :rgb(245, 245, 245);
+--font-gray-color : rgb(197, 188, 188);
+--font-impact-color : rgb(28, 118, 253);
+/**/
+}
+
+
+/*그라데이션*/
+    .s-bg-g1{
+    background: linear-gradient(
+        to bottom right,
+        #fdfdfd,      
+        #d1d1d1,      
+        #b0b0b0       /* 미디엄 그레이  */
+    ) !important;
+    }
+
+    .s-bg-g2{
+    background: linear-gradient(
+        to bottom right,
+        #fdfdfd,
+        #cfcfcf,
+        #b0b0b0,
+        #d0e8f9     /* 은은한 파스텔 블루  */
+    ) !important; 
+    }
+
+    .s-bg-g3{
+        background: linear-gradient(
+        to top right,
+        #fdfdfd,
+        #cfcfcf,
+        #b0b0b0,
+        #ffe6ea     /* 연핑크  */
+    ) !important;
+    }
+
+    .s-bg-g4{
+      background: linear-gradient(
+        to top right,
+        #d0e8f9,     /* 은은한 파스텔 블루  */
+        #cfcfcf,
+        #b0b0b0,
+        #ffe6ea     /* 연핑크 (코색상 강조) */
+    ) !important;
+    }   
+    
+
+
+
+/*헤더*/
+header{
+        position: fixed;
+        top: 0px;
+        z-index: 99;
+        background: transparent;
+        width: 100%;
+        color: var(--font-gray-color);
+        transform: all 0.5s;
+    }
+  header:hover{
+    background: var(--main-white-color);
+    color: var(--font-color);
+  }  
+  header:hover .header-logo {
+    background-position: 0px 3px;
+  }
+  .header-logo {
+      display: block;
+      width: 207px;
+      height: 49px;
+      top: 300px;
+      background: url(./img/logoS2.png) no-repeat;
+      background-size: 100% auto;
+      background-position: 0px -39px;
+      transform: all 0.5s;
+  }
+    .header-line {
+        overflow: initial;
+        width: 100%;
+        height: 99px;
+        box-sizing: border-box;
+        border-bottom: 1px solid var(--border-white-color);
+        transition: 0.3s ease-in-out;
+    }
+    .blind {
+        display: block;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+    .header-set {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: none;
+        max-width: 1720px;
+        height: 99px;
+        padding: 0 1.5rem;
+        margin: auto;  
+    }
+    .header-list-line {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    nav#gnb-lang-sns {
+        display: flex;
+        gap: 10px;
+        font-weight: bold;
+    }
+    .go-sns:hover{
+      color: var(--main-color);
+    }
+
+/*헤더*/
+    nav {
+    }
+
+    .menu {
+      display: flex;
+      gap: 2rem;
+      position: relative;
+    }
+    .dep1 {
+        overflow-y: initial;
+        position: initial;
+        transform: initial;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0px;
+        gap: 2rem;
+    }
+    .menu-item {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .menu-item > span {
+      font-weight: bold;
+      padding: 0.5rem;
+      display: inline-block;
+    }
+    .mainlist{
+      transform:  all 0.5s;
+    }
+    .mainlist:hover{
+      color:var(--main-color);
+      
+    }
+
+   .dropdown {
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #ffffff;
+      color: #000;
+      min-width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+    .dropdown a {
+      display: block;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: var(--font-color);
+    }
+    .dropdown a:hover {
+      background-color: var(--main-gray-color);
+      color: var(--main-color);
+    }
+    .menu-item:hover .dropdown {
+
+      transform: scaleY(1);
+      opacity: 1;
+    }
+ 
+    .menu-item:hover .dropdown {
+      display: block;
+    }
+
+
+    .bgr {
+        cursor: pointer;
+        overflow: visible;
+        border: 0px none;
+        font-weight: normal; 
+        display: none;
+        position: fixed;
+        top: 20px;
+        right: 0px;
+        z-index: 999;
+        width: 72px;
+        height: 60px;
+        transition: 0.8s;
+        background-color: transparent;
+    }
+    .bgr div {
+        position: relative;
+        left: 50%;
+        width: 16px;
+        height: 2px;
+        background-color: black;
+        transform: translateX(-50%);
+        transition: 0.8s;
+    }
+    .bgr div + div {
+        margin: 3px 0px;
+    }
+
+    .bgrd1 {
+        transform: rotate(45deg) !important;
+        top: 0px !important;
+        left: 27px !important;
+    }
+    .bgrd2 {
+        width: 0px !important;
+    }
+    .bgrd3 {
+        transform: rotate(-45deg) !important;
+        top: -10px !important;
+        left: 27px !important;
+    }
+ 
+
+
+    /* 헤더 반응형 */
+    @media (max-width: 768px) {
+      .header-logo{
+        margin: 20px 0px;
+    }
+    .header-set {
+        flex-direction: column;
+        gap: 0;
+        height: 100vh;
+        overflow: scroll;
+        background: var(--main-white-color);
+    }
+      .header-line {
+          width: 100%;
+          height: 100vh;
+          color: var(--font-color) !important;
+          background: var(--main-white-color);
+          transition: 0.3s ease-in-out;
+          overflow-y: auto;
+      }
+      .menu {
+        flex-direction: column;
+        gap: 0;
+      }
+      .dep1 {
+        flex-direction: column;
+      } 
+      .dropdown {
+        position: static;
+        box-shadow: none;
+        transform: none !important;
+        opacity: 1 !important;
+      }
+      .dropdown a {
+        border-bottom: 1px solid var(--border-white-color);
+
+    }
+    }
+
+   #section0{
+      /*   background: url("https://vmspace.com/ActiveFile/spacem.org/board_img/167681748166b582e5540e9.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;*/
+      position: relative;  /* absolute 요소의 기준점 설정 */
+      height: 100vh;       /* 전체 뷰포트 높이 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .sect-mimg{
+      position: absolute;
+      animation: spin 2s linear infinite, stopSpin 0.3s 5s forwards;
+    }
+    .mainh-line {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 4rem;
+    bottom: 4rem;
+    align-items: flex-start;
+    color: var(--font-color)
+  }
+  .mainh-line h1{
+    font-size: 34px;
+  }
+  .mainh-line h2{
+    font-size: 22px;
+  }
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes stopSpin {
+    /* 마지막 프레임에서 애니메이션 정지 */
+    to { transform: rotate(360deg); }
+  }
+</style>
+
+<body>
+
+    <!--에니메이션 스크립트-->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--에니메이션 스크립트-->
+    <!--스와이퍼 스크립트-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--버거-->
+    <button class="bgr">
+      <div  id="bg1"></div>
+      <div  id="bg2"></div>
+      <div  id="bg3"></div>
+    </button>
+
+    <header class="header">
+      <div class="header-set">
+        <h1 class="gos-logo"><a href="#" class="header-logo"><span class="blind">Korean Cultural Center New York</span></a></h1>
+        <div class="header-list-line">
+        
+      <nav>
+        <div class="menu"  id="gnb">
+          <div class="dep1">
+            <div class="menu-item">
+              <span class="mainlist">About Korea</span>
+              <div class="dropdown">
+                <a href="https://kr.koreanculture.org/korea-information-life" target="_blank" rel="noopener noreferrer">Life</a>
+                <a href="https://kr.koreanculture.org/korea-information-society" target="_blank" rel="noopener noreferrer">Society</a>
+                <a href="https://kr.koreanculture.org/korea-information-culture" target="_blank" rel="noopener noreferrer">Culture</a>
+                <a href="https://kr.koreanculture.org/korea-information-tourism" target="_blank" rel="noopener noreferrer">Tourism</a>
+                <a href="https://kr.koreanculture.org/korea-information-sports" target="_blank" rel="noopener noreferrer">Sports</a>
+                <a href="https://kr.koreanculture.org/korea-information-history" target="_blank" rel="noopener noreferrer">History</a>
+                <a href="https://kr.koreanculture.org/korea-information-government" target="_blank" rel="noopener noreferrer">Government</a>
+                <a href="https://kr.koreanculture.org/korea-information-economy">Economy</a>
+                <a href="https://kr.koreanculture.org/korea-information-interkorean-relations" target="_blank" rel="noopener noreferrer">Inter-Korean Relations</a>
+                <a href="https://kr.koreanculture.org/learning-resources" target="_blank" rel="noopener noreferrer">Learning Resources</a>
+                <a href="https://www.flickr.com/people/koreanet/" target="_blank" rel="noopener noreferrer">Related Images</a>
+                <a href="https://kr.koreanculture.org/related-sites" target="_blank" rel="noopener noreferrer">Related Sites</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="mainlist">Programs & Events</span>
+              <div class="dropdown">
+                <a href="https://www.koreanculture.org/performingarts" target="_blank" rel="noopener noreferrer">Performing Arts</a>
+                <a href="https://www.koreanculture.org/exhibition-visual-arts" target="_blank" rel="noopener noreferrer">Exhibitions & Visual Arts</a>
+                <a href="https://www.koreanculture.org/film" target="_blank" rel="noopener noreferrer">Film</a>
+                <a href="https://www.koreanculture.org/education" target="_blank" rel="noopener noreferrer">Education / Literature</a>
+                <a href="https://www.koreanculture.org/cuisine" target="_blank" rel="noopener noreferrer">Korean Cuisine</a>
+                <a href="https://www.koreanculture.org/online-contents" target="_blank" rel="noopener noreferrer">Special Events</a>
+                <a href="https://www.koreanculture.org/multimedia" target="_blank" rel="noopener noreferrer">Event Gallery</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="mainlist">Library</span>
+              <div class="dropdown">
+                <a href="http://library.koreanculture.org/subhomepage1_e/usmn000.jsp" target="_blank" rel="noopener noreferrer">KOREAN</a>
+                <a href="http://library.koreanculture.org/subhomepage1/usmn000.jsp" target="_blank" rel="noopener noreferrer">ENGLISH</a>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="mainlist">Visit</span>
+              <div class="dropdown">
+                <a href="https://www.koreanculture.org/welcome-to-kccny" target="_blank" rel="noopener noreferrer">About KCCNY</a>
+                <a href="https://www.koreanculture.org/visitors-guideline" target="_blank" rel="noopener noreferrer">Visitor Guide</a>
+                <a href="https://www.koreanculture.org/contact-us" target="_blank" rel="noopener noreferrer">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <nav id="gnb-lang-sns">
+        <a class="go-sns" href="./indexKR.html"><p>KOR</p></a>
+        <a class="go-sns" href="https://www.instagram.com/kccny/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="go-sns" href="https://www.facebook.com/KoreanCulturalCenterNY/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="go-sns" href="https://x.com/KoreanCultureNY" target="_blank"><i class="fab fa-twitter"></i></a>
+      </nav>
+      </div>
+      </div>
+    </header>
+    
+    <main>
+      <section id="section0">
+        <img class="sect-mimg" src="./img/mainK.png" alt="mainimg">
+        <div class="mainh-line" data-aos="flip-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+          <h1>New York Korea Center</h1>
+          <h2>Learning and Hangeul in New York</h2>
+        </div>
+      </section>
+    
+      <section id="section1">
+        <div class="h-line" data-aos="flip-left" data-aos-duration="2000">
+          <h2>FEATURED EVENTS</h2>
+        </div>
+        
+        <div class="mainslider-container">
+          <div class="mainslider-track" id="mainsliderTrack">
+            <div class="mainslide">
+              <a href="https://kr.koreanculture.org/exhibition/2025/05/chang-ucchin" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1744730024375-55SZ3PXM1GGVJ12E2LUW/%EC%9E%A5%EC%9A%B1%EC%A7%84+%EC%A0%84%EC%8B%9C+%ED%8F%AC%EC%8A%A4%ED%84%B0+%28%EA%B0%80%EB%A1%9C%29.png?format=1500w" alt="Genmoji" />
+              <div class="mainslide-text non-show">
+                <p>culture</p>
+                <h3>날개 달린 가능성.</h3>
+              </div>
+              </a>
+            </div>
+            <div class="mainslide">
+              <a href="https://www.koreanculture.org/performing-arts/2025/06/30sounds-rhythms-of-korea" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1748625923652-PR2EHWI4ZEGH6VZ47CP1/Poster_Sounds+and+Rhythms+of+Korea.png?format=1500w" alt="카메라" />
+              <div class="mainslide-text-b non-show">
+                <p>한국국악</p>
+                <h3>신비로운 음악과 한국의 음악을 마음껏.</h3>
+              </div>
+            </a>
+            </div>
+            <div class="mainslide">
+              <a href="https://kr.koreanculture.org/performing-arts/2025/08/06/kmusic-night/kor" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1747756050738-A6897EN3M98TV83J0EJ3/Poster+2025+KMusic+Night+MAIN+FINAL.png?format=1500w" alt="A18" />
+              <div class="mainslide-text-b non-show">
+                <p>k-pop</p>
+                <h3>보고싶은 k-pop 아이돌</h3>
+              </div>
+            </a>
+            </div>
+            <div class="mainslide">
+              <a href="https://www.koreanculture.org/performing-arts/2025/06/20/nina" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1746804985728-5G0GE6343VC7T6LA112B/Poster+Nina+1920x1080+FINAL+%282%29.jpg?format=1500w" alt="설계" />
+              <div class="mainslide-text-b non-show">
+                <p>in New York</p>
+                <h3>아름답게, 견고하게, 설계부터 다르게.</h3>
+              </div>
+            </a>
+            </div>
+            <div class="mainslide">
+              <a href="https://kr.koreanculture.org/exhibition/2024/07/hangeul-wall-1000kr" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1734710091368-GNQTFBDQH6HF3H7V2P5T/%25255BFor%252BPress%25255D%252BHangeul%252BWall%252BPhoto%252B%2525285%252529%252B%2525282%252529.jpg?format=1500w" alt="환경" />
+              <div class="mainslide-text non-show">
+                <p>한글</p>
+                <h3>가나다라바사</h3>
+              </div>
+              </a>
+            </div>
+            <div class="mainslide">
+              <a href="https://www.koreanculture.org/films/2025/06/12/nkmn-exorcism-chronicles" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.squarespace-cdn.com/content/v1/581ff5eef5e231b25f9c12db/1748743740124-UF4H95QQI1SHCMN8E7G8/NEW+KOREAN+MOVIE+NIGHT.png?format=1500w" alt="보안" />
+              <div class="mainslide-text non-show">
+                <p>애니메이션</p>
+                <h3>당신의 데이터를 원하는 곳에서만.</h3>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="nav-buttons">
+          <button class="nav-btn" id="prevBtn">&#10094;</button>
+          <button class="nav-btn" id="nextBtn">&#10095;</button>
+        </div>
+      </section>
+    
+      <section id="section2">
+        <div class="sec3areaA">
+          <h2 class="ml2" data-aos="flip-left" data-aos-duration="1500">FOLLOW US ON</h2>
+          <h2 class="ml6" data-aos="flip-left" data-aos-duration="1500">SOCIAL MEDIA</h2>
+          <button class="btnflw">Follow</button>
+        </div>
+        <div class="sec3areaB">
+          <h2 data-aos="flip-up" data-aos-delay="300">Welcome to New York</h2>
+        </div>
+        <img class="nyGoat" src="./img/nyGoat.png" alt="Statue of Liberty" data-aos="flip-right" data-aos-delay="300" data-aos-easing="ease-out-back">
+      </section>
+    
+      <section id="section3">
+        <div class="subcontainer">
+          <div class="item s1"><img src="./img/subimg/su1.png" alt="s1">
+            <div class="subtextarea"><h3>WELCOME</h3><p>in New York</p></div>
+          </div>
+          <div class="item s2"><img src="./img/subimg/su2.png" alt="s2">
+            <div class="subtextarea"><h3>TICKETS</h3><p>10 Tony Awards</p></div>
+          </div>
+          <div class="item s3"><img src="./img/subimg/su3.png" alt="s3">
+            <div class="subtextarea"><h3>TIMESQUARE</h3><p>in New York</p></div>
+          </div>
+          <div class="item s4"><img src="./img/subimg/su4.png" alt="s4">
+            <div class="subtextarea"><h3>K-pop</h3><p>Come to K-pop</p></div>
+          </div>
+          <div class="item s5"><img src="./img/subimg/su5.png" alt="s5">
+            <div class="subtextarea"><h3>K-music</h3><p>Traditional Music Contest</p></div>
+          </div>
+          <div class="item s6"><img src="./img/subimg/su6.png" alt="s6">
+            <div class="subtextarea"><h3>EMPLOYMENT</h3><p>Welcome</p></div>
+          </div>
+        </div>
+      </section>
+    
+      <section id="section5">
+        <div class="news-head">
+          <h2 class="ml2" data-aos="flip-left" data-aos-duration="1500">News</h2>
+          <h2 class="ml2" data-aos="flip-left" data-aos-duration="2000">Korea.net</h2>
+        </div>
+        <ul class="news-list">
+          <li>
+            <a href="https://www.korea.net/NewsFocus/Business/view?articleId=272942" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 06, 2025</div>
+              <div class="news-title">Swede joins culture minister on fam tour of eastern province</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.korea.net/NewsFocus/FoodTravel/view?articleId=272932" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">Egyptian influencer promotes Korean culture in Arab world</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.korea.net/NewsFocus/Culture/view?articleId=272922" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">UN agency lauds Korean humanitarian aid in YouTube video</div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.korea.net/NewsFocus/policies/view?articleId=272912" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">Honoring nation's fallen heroes on eve of Memorial Day</div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.korea.net/NewsFocus/Sci-Tech/view?articleId=272896" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">June 5 designated annual day to honor traditional music</div>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.korea.net/NewsFocus/Korea_in_photos/view?articleId=272885" target="_blank" rel="noopener noreferrer">
+              <div class="news-date">Jun 05, 2025</div>
+              <div class="news-title">Deals for nuke plant in Czechia, fighters to Philippines concluded</div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="section6" >
+
+
+        <a href="https://www.koreanculture.org/subscribe" target="_blank" rel="noopener noreferrer">
+        <div class="subbbox s-bg-g4">
+          <img class="sub-bimg" src="./img/subbnner.png" alt="subimg" data-aos="flip-down" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+        </div>
+        </a>
+        <!--돌아가는 이미지-->
+        <div class="infinite-loslider">
+          <div class="infinite-track">
+            <!-- 원본 이미지 세트 -->
+            <div class="loslide"><img src="./img/moneimg/ming1.png" alt=""><span>#Culture</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming2.png" alt=""><span>#Art</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming3.png" alt=""><span>#performance</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming4.png" alt=""><span>#Exhibition</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming5.png" alt=""><span>#Education</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming6.png" alt=""><span>#Event</span></div>
+        
+            <!-- 복제 이미지 세트 -->
+            <div class="loslide"><img src="./img/moneimg/ming1.png" alt=""><span>#Culture</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming2.png" alt=""><span>#Art</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming3.png" alt=""><span>#performance</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming4.png" alt=""><span>#Exhibition</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming5.png" alt=""><span>#Education</span></div>
+            <div class="loslide"><img src="./img/moneimg/ming6.png" alt=""><span>#Event</span></div>
+          </div>
+      </div>
+
+
+        <footer class="footer">
+          <div class="footer-inner">
+        
+            <!-- 왼쪽 정보 영역 -->
+            <div class="footer-info">
+              <ul class="footer-nav">
+                <li><a href="#">Press Releases</a></li>
+                <li><a href="#">In The Media</a></li>
+                <li><a href="#">Jobs & Opportunities</a></li>
+              </ul>
+        
+              <h3>Korean Cultural Center New York</h3>
+              <address>
+                122 E 32nd St.,<br>
+                New York, NY 10016<br>
+                @TELL (212) 759 9550<br>
+                @E-mail <a href="mailto:info@koreanculture.org">info@koreanculture.org</a>
+              </address>
+            </div>
+        
+            <!-- 오른쪽 로고 영역 -->
+            <div class="footer-logos">
+              <a href="https://www.mcst.go.kr/english/index.jsp" title="Partner 1"><img src="./img/flogo/f-img1.png" alt="Partner 1 Logo"></a>
+              <a href="https://www.kocis.go.kr/main.do" title="Partner 2"><img src="./img/flogo/f-img2.png" alt="Partner 2 Logo"></a>
+              <a href="https://overseas.mofa.go.kr/us-newyork-en/index.do" title="Partner 3"><img src="./img/flogo/f-img3.png" alt="Partner 3 Logo"></a>
+              <a href="https://english.visitkorea.or.kr/svc/main/index.do" title="Partner 4"><img src="./img/flogo/f-img4.png" alt="Partner 4 Logo"></a>
+              <a href="http://atcenteramerica.com/" title="Partner 5"><img src="./img/flogo/f-img5.png" alt="Partner 5 Logo"></a>
+              <a href="https://atcenteramerica.com/" title="Partner 6"><img src="./img/flogo/f-img6.png" alt="Partner 6 Logo"></a>
+            </div>
+        
+          </div>
+        </footer>
+      </section>
+</main>
+
+
+</body>
+</html>
+
+<style>
+/*section0*/
+/*section1*/
+#section1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0 30px;
+  }
+
+  .mainslider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .mainslider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+  .mainslide {
+    min-width: 300px;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .mainslide:hover {
+    transform: scale(1.05);
+  }
+
+  .mainslide img {
+    width: 100%;
+    display: block;
+  }
+
+  .mainslide-text {
+    padding: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .mainslide-text p {
+    font-size: 1rem;
+    color:var(--font-white-color);
+    margin: 0 0 4px;
+  }
+
+  .mainslide-text h3 {
+    color:var(--font-white-color);
+    margin: 0;
+  }
+
+  .mainslide-text-b {
+    padding: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .mainslide-text-b p {
+    font-size: 1rem;
+    color:var(--font-color);
+    margin: 0 0 4px;
+  }
+
+  .mainslide-text-b h3 {
+    color:var(--font-color);
+    margin: 0;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 2rem;
+  }
+
+  .nav-btn {
+    background: #eee;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 0 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .nav-btn:hover {
+    background: #ccc;
+  }
+  .nav.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+/*section1*/
+#section1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0 30px;
+  }
+
+  .mainslider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .mainslider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+  .mainslide {
+    min-width: 300px;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .mainslide:hover {
+    transform: scale(1.05);
+  }
+
+  .mainslide img {
+    width: 100%;
+    display: block;
+  }
+
+  .mainslide-text {
+    padding: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .mainslide-text p {
+    font-size: 1rem;
+    color:var(--font-white-color);
+    margin: 0 0 4px;
+  }
+
+  .mainslide-text h3 {
+    color:var(--font-white-color);
+    margin: 0;
+  }
+
+  .mainslide-text-b {
+    padding: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .mainslide-text-b p {
+    font-size: 1rem;
+    color:var(--font-color);
+    margin: 0 0 4px;
+  }
+
+  .mainslide-text-b h3 {
+    color:var(--font-color);
+    margin: 0;
+  }
+  .nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 2rem;
+  }
+
+  .nav-btn {
+    background: #eee;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 0 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .nav-btn:hover {
+    background: #ccc;
+  }
+  .nav.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+/*스와이퍼*/
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+.swiper-slide {
+  transition: all 1s ease-in-out;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(90%);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  background-color: black; 
+  transition: transform 1s ease-in-out;
+}
+/*
+.swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  transition: transform 1s ease-in-out;
+  max-height: 100%;
+}
+*/
+.swiper-slide-active img {
+  transform: scale(1);
+}
+/* 네비게이션 화살표 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+        /* 점 형태의 스크롤바 스타일 */
+        .swiper-scrollbar {
+            height: 4px; /* 매우 얇게 설정 */
+            background: transparent; /* 배경 투명 */
+            bottom: 20px;
+        }
+        .swiper-scrollbar-drag {
+            height: 8px; /* 점의 높이 */
+            width: 8px !important; /* 점의 너비 */
+            border-radius: 50%; /* 원형으로 만들기 */
+            background: rgba(255,255,255,0.9); /* 점 색상 */
+            top: -2px; /* 수직 중앙 정렬 */
+            position: relative;
+        }
+        
+        /* 페이지네이션 스타일 */
+        .swiper-pagination {
+            bottom: 40px !important; /* 스크롤바와 겹치지 않도록 위치 조정 */
+        }
+        /* 페이지네이션 점 */
+        .swiper-pagination-bullet {
+          background-color: rgba(255, 255, 255, 0.4);
+          transition: transform 0.3s ease;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #fff;
+          transform: scale(1.4);
+        }
+
+        .swiper-button-next:after, .swiper-button-prev:after {
+            border-radius: 100px;
+            padding: 18px 30px;
+            background: #6f6f6f3d;
+        }
+        .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+            content: 'prev';
+            margin-left: 50px;
+        }
+        .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+            content: 'next';
+            margin-right: 50px;
+        }
+
+
+/*section2*/
+#section2 {
+      height: 100vh;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      position: relative;
+    }
+    .nyGoat{
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 200px;
+  }
+
+  .sec3areaA button{
+    transition: all 0.5s;
+  }
+  .sec3areaA button:hover{
+    transform: scale(1.1) !important;
+    color: var(--font-white-color)  !important;
+    background: var(--main-color)  !important;
+  }
+
+/*section3*/
+#section3{
+  height: 100vh;
+ }
+
+.sec3areaA {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.sec3areaB {
+    z-index: 9;
+}
+ .subtextarea {
+    height: 100%;
+    margin-left: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.9s ease;
+}
+ .subcontainer{
+        display: grid;
+        width: 100%;
+        gap: 0px;
+        height: 100%;
+        grid-template-areas: 
+            's1 s2 s3' 
+            's4 s5 s6'
+        ;
+    } 
+    .subcontainer .item{
+      font-size: 20px;
+      box-sizing: border-box;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      height: 50vh;
+      overflow: hidden;
+    }   
+    .subcontainer .item img{
+      transition: all 0.5s ease;
+      height: 80%;
+      overflow: hidden;
+      width: 50%;
+      background-size: cover;
+      background-position: center;
+      min-width: 300px;
+      padding-left: 2rem;
+      /*
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: contain;
+      */
+    } 
+    .subcontainer .item:hover img{
+      transform: scale(1.1);
+      
+    }
+    .subcontainer .item:hover .subtextarea{
+      transform: translateX(20px);
+      
+    }
+    .subcontainer .s1{
+
+      background:var(--font-white-color); 
+      color: var(--main-black-color);
+        grid-area: s1;
+    }
+    .subcontainer .s2{
+
+      background: var(--main-black-color);
+      color: var(--font-white-color);
+        grid-area: s2;
+    } 
+    .subcontainer .s3{
+
+      background:var(--font-white-color); 
+      color: var(--main-black-color);
+        grid-area: s3;
+    } 
+    .subcontainer .s4{
+
+      background: var(--main-black-color);
+      color: var(--font-white-color);
+        grid-area: s4;
+    }
+    .subcontainer .s5{
+
+      background:var(--font-white-color); 
+      color: var(--main-black-color);
+        grid-area: s5;
+    } 
+    .subcontainer .s6{
+        background: var(--main-black-color);
+        color: var(--font-white-color);
+        grid-area: s6;
+    }     
+.btnflw{
+    width: 300px;
+    margin: 20px;
+    
+}
+/*section4*/
+#section4 {
+    display: flex;
+    align-items: center;
+}
+/*news*/
+#section5 {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.news-head{
+  margin-bottom: 2rem;
+}
+.h-line{
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+ul.news-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    ul.news-list li a {
+      display: block;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: #333;
+/*
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      border-radius: 12px;
+      background: #fff;
+*/
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    ul.news-list li a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-date {
+      font-size: 0.85rem;
+      color: #999;
+      margin-bottom: 0.5rem;
+    }
+
+    .news-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+ 
+
+
+
+
+/*section6*/
+#section6{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.sub-bimg{
+    height: 300px;
+}    
+/*돌아가는 이미지*/
+.subbbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+.infinite-loslider {
+    width: 100%;
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 1rem 0;
+  }
+
+  .infinite-track {
+    display: flex;
+    width: calc(240px * 12); /* 이미지 12개 (원본 6 + 복제 6) */
+    animation: scrollLoop 20s linear infinite;
+  }
+
+  .loslide {
+    position: relative;
+    width: 240px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  .loslide img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .loslide span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+  }
+
+  @keyframes scrollLoop {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+
+/*푸터*/
+html {
+      scroll-behavior: smooth;
+    }
+  
+    .footer {
+      background-color:var(--main-black-color);
+      color: var(--font-white-color);
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  
+    .footer-info {
+      flex: 1 1 300px;
+    }
+  
+    .footer-info h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      color: var(--font-white-color);
+    }
+  
+    .footer-info address {
+      font-style: normal;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+  
+    .footer-info a {
+      color: #7ec9ff;
+      text-decoration: none;
+    }
+  
+    .footer-info a:hover {
+      text-decoration: underline;
+    }
+  
+    .footer-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .footer-nav a {
+      font-size: 0.95rem;
+      color: #bbb;
+      transition: color 0.3s ease;
+    }
+  
+    .footer-nav a:hover {
+      color: #fff;
+    }
+  
+    .footer-logos {
+      flex: 1 1 300px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    .footer-logos a {
+      display: inline-block;
+      background: #fff;
+      padding: 8px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .footer-logos a:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+  
+    .footer-logos img {
+      height: 40px;
+      display: block;
+      max-width: 100%;
+    }
+  
+
+  /*  반응형  */
+@media (max-width: 768px) {
+
+/*#section0*/    
+/*#section1*/      
+    .mainslide {
+      min-width: 80%;
+      max-width: 100%;
+    }
+    .mainslider-track{
+      padding: 0px;
+    }
+/*#section2*/
+      #section2 {
+          height: 100vh;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+      }
+
+      ul.news-list {
+        grid-template-columns: 1fr;
+      }
+
+
+
+
+      ul.news-list li a {
+        padding: 1.2rem;
+      }
+      .header-list-line {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+        /* margin-bottom: 20px; */
+    }
+
+/*#section3*/
+  #section3 {
+      height: 300vh;
+  }
+  .subcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+/*#section4*/    
+
+/*#section5*/
+
+/*#section6*/
+    .subbbox {
+        margin-bottom: 100px;
+    }
+      .sub-bimg{
+        width: 80%;
+        height: auto;
+    }
+    .slide {
+      width: 160px;
+    }
+
+    .infinite-track {
+      width: calc(160px * 12);
+    }
+    
+ /*#푸터*/
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+  
+      .footer-logos {
+        display: none;
+      }
+      .bgr{
+        display: block;
+    }    
+    
+}
+
+
+
+
+/*슬라이드*/
+    .image-container {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    .slide {
+      position: absolute;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      transform: scale(0.98);
+    }
+
+    .slide.active {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 2;
+    }
+
+    .slide-text {
+      position: absolute;
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      z-index: 3;
+    }
+
+    .slide-text.active {
+      opacity: 1;
+    }
+
+
+  </style>
+
+  
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+      effect: 'fade', // 슬라이드 대신 fade 효과
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+        hide: false,
+      },
+    });
+</script>
+
+
+<script>
+//로딩시 서서히
+window.addEventListener('load', function () {
+        document.body.classList.add('loaded');
+    });
+//스크롤맨위로
+document.addEventListener('DOMContentLoaded', function () {
+    const logo = document.querySelector('.gos-logo');
+    if (logo) {
+      logo.addEventListener('click', function (e) {
+        e.preventDefault(); // 링크 이동 방지 (필요 시)
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // 부드럽게 스크롤
+        });
+      });
+    }
+  });
+//화면 스크롤
+const sections = document.querySelectorAll('section');
+let currentSection = 0;
+let isScrolling = false;
+
+window.addEventListener(
+  'wheel',
+  (e) => {
+        // 화면 너비가 768px 이하이면 기본 스크롤 허용
+        if (window.innerWidth <= 768) return;
+
+    // Ctrl, Command, Alt, Shift 키 누르면 무시
+    if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) return;
+
+    // 이미 스크롤 중이면 무시
+    if (isScrolling) return;
+
+    e.preventDefault();
+    isScrolling = true;
+
+    const direction = e.deltaY > 0 ? 1 : -1;
+
+    // 섹션 인덱스 계산
+    const nextSection = currentSection + direction;
+
+    // 범위 제한
+    if (nextSection >= 0 && nextSection < sections.length) {
+      currentSection = nextSection;
+
+      sections[currentSection].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    // 스크롤이 끝나기 전에 다시 반응하지 않도록 타이머 설정
+    setTimeout(() => {
+      isScrolling = false;
+    }, 1000); // 섹션 이동 시간에 맞춰 설정
+  },
+  { passive: false }
+);
+
+
+//메인 화면
+const track = document.getElementById('mainsliderTrack');
+const mainslides = document.querySelectorAll('.mainslide');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentIndex = 0;
+
+// 슬라이드 하나의 실제 width를 계산 (마진 포함)
+function getSlideWidth() {
+  return mainslides[0].offsetWidth + parseInt(getComputedStyle(mainslides[0]).marginRight || 0);
+}
+
+function updateSlide() {
+  const slideWidth = getSlideWidth();
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+  // 버튼 활성/비활성 처리
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex === mainslides.length - 1;
+
+  // 비활성화된 버튼에 클래스 추가 (스타일 적용용)
+  prevBtn.classList.toggle('disabled', currentIndex === 0);
+  nextBtn.classList.toggle('disabled', currentIndex === mainslides.length - 1);
+}
+
+// 버튼 클릭 시 슬라이드 이동
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlide();
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < mainslides.length - 1) {
+    currentIndex++;
+    updateSlide();
+  }
+});
+
+// 화면 리사이즈 시 위치 재계산
+window.addEventListener('resize', () => {
+  updateSlide();
+});
+
+// 초기 실행
+updateSlide();
+
+
+
+//follow
+document.querySelector('.btnflw').addEventListener('click', () => {
+    document.getElementById('section3').scrollIntoView({ behavior: 'smooth' });
+  });
+
+//버거
+
+
+
+const bbtbgr = document.querySelector('.bgr');
+const headerline = document.querySelector('.header');
+
+const bg1 = document.getElementById('bg1');
+const bg2 = document.getElementById('bg2');
+const bg3 = document.getElementById('bg3');
+
+
+function handleResize() {
+  if (window.innerWidth < 768) {
+    headerline.classList.add('non-show');
+  } else {
+    headerline.classList.remove('non-show');
+  }
+}
+
+// 초기 실행
+handleResize();
+
+// 리사이즈 이벤트 리스너 추가
+window.addEventListener('resize', handleResize);
+
+    bbtbgr.addEventListener('click', function() {
+        bg1.classList.toggle('bgrd1');
+        bg2.classList.toggle('bgrd2');
+        bg3.classList.toggle('bgrd3');
+        headerline.classList.toggle('non-show');
+    });
+
+
+
+</script>
+</body>
+</html>
